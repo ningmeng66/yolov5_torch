@@ -1,0 +1,9 @@
+2020-12-03 10:37:13,129 INFO    MainThread:25312 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-03 10:37:13,129 INFO    MainThread:25312 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2020-12-03 10:37:13,129 INFO    MainThread:25312 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-03 10:37:13,129 INFO    MainThread:25312 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\wandb\run-20201203_103713-2ghg3kgm\logs\debug.log
+2020-12-03 10:37:13,129 INFO    MainThread:25312 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\wandb\run-20201203_103713-2ghg3kgm\logs\debug-internal.log
+2020-12-03 10:37:20,075 INFO    MainThread:25312 [wandb_run.py:_console_start():1218] atexit reg
+2020-12-03 10:37:20,076 INFO    MainThread:25312 [wandb_run.py:_redirect():1085] redirect: SettingsConsole.WRAP
+2020-12-03 10:37:20,076 INFO    MainThread:25312 [wandb_run.py:_redirect():1116] Wrapping output streams.
+2020-12-03 10:37:20,076 INFO    MainThread:25312 [wandb_run.py:_redirect():1132] Redirects installed.

@@ -1,0 +1,44 @@
+Scanning images:   0%|          | 0/10 [00:00<?, ?it/s]Scanning images: 100%|██████████| 10/10 [00:00<00:00, 835.59it/s]
+0it [00:00, ?it/s]Scanning labels data\test_data\labels\train.cache (10 found, 0 missing, 0 empty, 0 duplicate, for 10 images): 10it [00:00, 10027.02it/s]
+0it [00:00, ?it/s]Scanning labels data\test_data\labels\train.cache (10 found, 0 missing, 0 empty, 0 duplicate, for 10 images): 10it [00:00, ?it/s]
+
+Analyzing anchors... anchors/target = 5.68, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 test
+Using 4 dataloader workers
+Logging results to runs\train\exp3
+Starting training for 300 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|          | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "C:/Users/admin/Downloads/ningmengs-yolov51-master/yolov51/train.py", line 490, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "C:/Users/admin/Downloads/ningmengs-yolov51-master/yolov51/train.py", line 261, in train
+    for i, (imgs, targets, paths, _) in pbar:  # batch -------------------------------------------------------------
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\tqdm\std.py", line 1102, in __iter__
+    for obj in iterable:
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\utils\datasets.py", line 97, in __iter__
+    yield next(self.iterator)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\dataloader.py", line 363, in __next__
+    data = self._next_data()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\dataloader.py", line 989, in _next_data
+    return self._process_data(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\dataloader.py", line 1014, in _process_data
+    data.reraise()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\_utils.py", line 395, in reraise
+    raise self.exc_type(msg)
+AssertionError: Caught AssertionError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\_utils\worker.py", line 185, in _worker_loop
+    data = fetcher.fetch(index)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\utils\datasets.py", line 522, in __getitem__
+    img, labels = load_mosaic(self, index)
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\utils\datasets.py", line 652, in load_mosaic
+    img, _, (h, w) = load_image(self, index)
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\utils\datasets.py", line 613, in load_image
+    assert img is not None, 'Image Not Found ' + path
+AssertionError: Image Not Found data\test_data\images\train\Image__2020-11-30__15-31-33 - 副本 (2).jpg
+

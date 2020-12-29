@@ -1,0 +1,37 @@
+Scanning images:   0%|          | 0/10 [00:00<?, ?it/s]Scanning images: 100%|██████████| 10/10 [00:00<00:00, 716.22it/s]
+0it [00:00, ?it/s]Scanning labels data\test_data\labels\train.cache (9 found, 0 missing, 1 empty, 0 duplicate, for 10 images): 10it [00:00, 10027.02it/s]
+0it [00:00, ?it/s]Scanning labels data\test_data\labels\train.cache (9 found, 0 missing, 1 empty, 0 duplicate, for 10 images): 10it [00:00, 5012.31it/s]
+
+Analyzing anchors... anchors/target = 5.75, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs\train\exp6
+Starting training for 400 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|          | 0/2 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "C:/Users/admin/Downloads/ningmengs-yolov51-master/yolov51/train.py", line 490, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "C:/Users/admin/Downloads/ningmengs-yolov51-master/yolov51/train.py", line 286, in train
+    pred = model(imgs)  # forward
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\models\yolo.py", line 121, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\models\yolo.py", line 137, in forward_once
+    x = m(x)  # run
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\models\common.py", line 69, in forward
+    y1 = self.cv3(self.m(self.cv1(x)))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\models\common.py", line 36, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\conv.py", line 419, in forward
+    return self._conv_forward(input, self.weight)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\modules\conv.py", line 415, in _conv_forward
+    return F.conv2d(input, weight, self.bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 1.26 GiB (GPU 0; 6.00 GiB total capacity; 379.32 MiB already allocated; 3.43 GiB free; 868.00 MiB reserved in total by PyTorch)

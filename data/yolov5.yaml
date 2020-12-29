@@ -1,0 +1,7 @@
+train: ./data/test_data/images/train/
+val: ./data/test_data/images/train/
+
+nc: 1
+
+# class names
+names: ['box1']

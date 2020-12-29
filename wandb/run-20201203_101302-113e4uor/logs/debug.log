@@ -1,0 +1,64 @@
+2020-12-03 10:13:02,508 INFO    MainThread:1940 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-03 10:13:02,508 INFO    MainThread:1940 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2020-12-03 10:13:02,508 INFO    MainThread:1940 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-03 10:13:02,508 INFO    MainThread:1940 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\wandb\run-20201203_101302-113e4uor\logs\debug.log
+2020-12-03 10:13:02,508 INFO    MainThread:1940 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\admin\Downloads\ningmengs-yolov51-master\yolov51\wandb\run-20201203_101302-113e4uor\logs\debug-internal.log
+2020-12-03 10:13:10,590 INFO    MainThread:1940 [wandb_run.py:_console_start():1218] atexit reg
+2020-12-03 10:13:10,591 INFO    MainThread:1940 [wandb_run.py:_redirect():1085] redirect: SettingsConsole.WRAP
+2020-12-03 10:13:10,591 INFO    MainThread:1940 [wandb_run.py:_redirect():1116] Wrapping output streams.
+2020-12-03 10:13:10,591 INFO    MainThread:1940 [wandb_run.py:_redirect():1132] Redirects installed.
+2020-12-03 10:18:06,238 INFO    MainThread:1940 [wandb_run.py:_config_callback():547] config_cb None None {'weights': 'yolov5s.pt', 'cfg': '', 'data': 'data/yolov5.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, 'epochs': 300, 'batch_size': 4, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'images_weights': False, 'device': '0', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'log_imgs': 16, 'workers': 8, 'project': 'runs/train', 'name': 'exp', 'exist_ok': False, 'total_batch_size': 4, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\exp3', '_wandb': {'cli_version': '0.10.11', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch', 'code_path': 'code/train.py', 'bounding_box/class_labels': {'Images_wandb_delimeter_predictions': {'type': 'bounding_box/class_labels', 'key': 'Images_wandb_delimeter_predictions', 'value': {0: 'person'}}}}}
+2020-12-03 10:18:07,323 INFO    MainThread:1940 [wandb_run.py:_atexit_cleanup():1188] got exitcode: 1
+2020-12-03 10:18:07,323 INFO    MainThread:1940 [wandb_run.py:_restore():1160] restore
+2020-12-03 10:18:07,325 INFO    MainThread:1940 [wandb_run.py:_wait_for_finish():1305] got exit ret: uuid: "b0e030ad51004ef398d06224f1b3fdf1"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+      media_count: 8
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 220382
+      total_bytes: 571205
+    }
+  }
+}
+
+2020-12-03 10:18:09,329 INFO    MainThread:1940 [wandb_run.py:_wait_for_finish():1305] got exit ret: uuid: "23011c3b1eaf482db2224b1e04b8ed9b"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+      media_count: 8
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 793667
+      total_bytes: 904546
+    }
+  }
+}
+
+2020-12-03 10:18:11,331 INFO    MainThread:1940 [wandb_run.py:_wait_for_finish():1305] got exit ret: uuid: "70609627e5504eec8262c2a5a62f81a2"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+      media_count: 8
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 904546
+      total_bytes: 904546
+    }
+  }
+}
+
+2020-12-03 10:18:12,563 INFO    MainThread:1940 [wandb_run.py:_show_summary():1450] rendering summary
+2020-12-03 10:18:12,563 INFO    MainThread:1940 [wandb_run.py:_show_history():1488] rendering history
+2020-12-03 10:18:12,565 INFO    MainThread:1940 [wandb_run.py:_show_files():1517] logging synced files
+2020-12-03 10:18:12,565 INFO    MainThread:1940 [internal.py:handle_exit():138] Internal process exited
